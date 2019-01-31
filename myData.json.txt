@@ -1,0 +1,12 @@
+[{
+    num: 7,
+    color: "red"
+  },
+           {
+    num: 21,
+    color: "black"
+  },
+            {
+    num: 0,
+    color: "green"
+  }]
