@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<body>
+<div class="container-fluid">
+	<h2 style="color:Grey">My Outlook Email Stats from last 200 Days<small>   Anish Philip (W209 Thu 9:30 PM PST)</small></h2>
+  <div class="row">
+		<div class="col-xs-12 col-md-12">
+			<h4 style="color:green">Week over Week Received Vs Sent Trend</h4>
+			<div id="trend"></div>
+		</div>
+
+<div class="col-xs-12 col-md-12"><h6 style="border-style:ridge"><b><u>Summary:</u></b><br></br><li>The count of emails received has been highly correlated with the count of emails sent, but there is a gap. Emails being sent is lower that the incoming emails
+	<br></br><li>This can be attributed to the fact that some of the incoming emails are just FYI or IT/ Global notifications that doesn't require a response<br></br><li>As expected email activity has been lower during the holiday season (Nov: Thanksgiving and Dec: Christmas week)</h6></div>
+		<!-- On small screens fills the full grid, on medium+ ones only half -->
+		<div class="col-xs-12 col-md-12">
+			<h4 style="color:green">Switch between Sent and received Email distribution to Identify most busy day and hour in a week based on the latest 200 day data</h4>
+			<div id="dataset-picker"></div>
+			<div id="chart"></div>
+		</div>
+
+  </div>
+</div>
+
+<!-- load the d3.js library -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="heatmap.js"></script>
+<script src="main.js"></script>
+</body>
